@@ -1,0 +1,61 @@
+﻿<Window x:Class="PathTracerDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PathTracerDemo"
+        mc:Ignorable="d"
+        Title="PathTracer" Height="450" Width="800" ResizeMode="CanResize" MinHeight="400" MinWidth="600">
+    <Grid>
+        <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width="300" />
+            </Grid.ColumnDefinitions>
+
+            <Grid x:Name="imageGrid" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                <Image x:Name="resultImage" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Column="0"/>
+            </Grid>
+
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*" />
+                    <RowDefinition Height="65" />
+                </Grid.RowDefinitions>
+
+                <ScrollViewer VerticalScrollBarVisibility="Auto">
+                    <StackPanel HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                        <StackPanel x:Name="SpheresGrid" HorizontalAlignment="Stretch">
+                        </StackPanel>
+                        <Grid HorizontalAlignment="Stretch">
+                            <Button x:Name="addSphereButton" Content="新  增" HorizontalAlignment="Center" VerticalAlignment="Center" Width="60" Height="28" Margin="0,5,0,5" Click="AddSphereButton_Click"/>
+                        </Grid>
+                    </StackPanel>
+                </ScrollViewer>
+
+                <Grid VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Grid.Row="1">
+                            <Grid HorizontalAlignment="Stretch" VerticalAlignment="Top" Height="40">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="0*" />
+                                    <ColumnDefinition Width="5*" />
+                                    <ColumnDefinition Width="8*" />
+                                    <ColumnDefinition Width="5*" />
+                                </Grid.ColumnDefinitions>
+
+                                <Label Grid.Column="1" Content="迭代次数" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="15"/>
+                                <TextBox x:Name="iterationTimeTextBox" TextAlignment="Center" FontSize="20" Text="2" Grid.Column="2" Margin="5,5,5,5"/>
+                                <Button x:Name="startButton" Margin="10,5,10,5" Background="LightGray"  Content="启动" Grid.Column="3" Click="StartButton_Click"/>
+
+                            </Grid>
+
+                            <Grid Height="25" VerticalAlignment="Bottom">
+                                <ProgressBar x:Name="progressBar" Background="Transparent" Foreground="LightSkyBlue" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+                                <TextBlock x:Name="progressText" Text="Dark Flame Path Tracer" FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="20,0,0,0"/>
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                
+
+        </Grid>
+    </Grid>
+</Window>

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.106
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PathTracer", "PathTracer\PathTracer.csproj", "{CC19EFA0-0CB3-439B-B089-A3A0DD0EB347}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PathTracerDemo", "PathTracerDemo\PathTracerDemo.csproj", "{08540C49-4606-4B4F-A4D6-A20F6FA79278}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CC19EFA0-0CB3-439B-B089-A3A0DD0EB347}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC19EFA0-0CB3-439B-B089-A3A0DD0EB347}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC19EFA0-0CB3-439B-B089-A3A0DD0EB347}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC19EFA0-0CB3-439B-B089-A3A0DD0EB347}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08540C49-4606-4B4F-A4D6-A20F6FA79278}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08540C49-4606-4B4F-A4D6-A20F6FA79278}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08540C49-4606-4B4F-A4D6-A20F6FA79278}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08540C49-4606-4B4F-A4D6-A20F6FA79278}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9C56A3CB-EDED-4FFB-AE06-3EB0E6E20D82}
+	EndGlobalSection
+EndGlobal
